@@ -1,0 +1,24 @@
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.fix_width {
+    width: 1280px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.nav_bar {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    height: 60%;
+    width: 98%;
+    background-color: #DBA574;
+    border-radius: 20px;
+}
