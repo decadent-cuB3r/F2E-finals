@@ -2,12 +2,18 @@ html {
     background-color: #FFDEC0;
 }
 
+body {
+    vertical-align: middle;
+    justify-content: center;
+}
+
 li {
     list-style: none;
     text-decoration: none;
 }
 
 .container {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -15,6 +21,8 @@ li {
 
 .fix_width {
     width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -29,9 +37,9 @@ header {
 .nav_bar {
     position: absolute;
     top: 20%;
-    left: 1%;
+    left: 2%;
     height: 60%;
-    width: 98%;
+    width: 96%;
     background-color: #DBA574;
     border-radius: 20px;
 }
@@ -39,6 +47,8 @@ header {
 .nav_list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
 }
 
 .nav_list_item {
@@ -49,7 +59,6 @@ header {
 }
 
 .LOGO {
-    height: ;
     display: none;
 }
 
@@ -60,36 +69,64 @@ header {
 }
 
 
-/* login and main article */
+/* pg_content contains of left and right column */
+
+.pg_content {
+    position: relative;
+    height: 2000px;
+    width: 96%;
+}
+
+
+/* aside(left-column items) */
 
 .left-column {
-    position: relative;
-    width: 80%;
+    position: absolute;
+    left: 0;
+    top: 2%;
+    width: 85%;
+    height: 96%;
+    position: absolute;
+    background-color: #DBA574;
+    border-radius: 20px;
+    /* for decorations */
+    padding-bottom: 40px;
 }
 
-.left-col {
-    background-color: #DBA574;
-    border-radius: 20px 0 20px 20px;
-    width: 100%;
-    min-height: 500px;
-}
+
+/* main(center content items) */
 
 .main {
     position: absolute;
-    right: 0px;
     z-index: 99;
     border-radius: 10px;
     background-color: white;
-    min-height: 450px;
-    width: 80%;
+    height: 96%;
+    width: 70%;
+    left: 15%;
+    top: 40px;
 }
 
 
 /* aside(right-column items) */
 
 .right-column {
-    width: 16%;
+    width: 85%;
+    height: 96%;
     background-color: #DBA574;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 20px;
+    padding-top: 40px;
+}
+
+
+/* login and main article */
+
+.left-col {
+    width: 17.5%;
+    vertical-align: middle;
 }
 
 
@@ -99,8 +136,11 @@ footer {
     width: 100%;
     height: 100px;
     position: relative;
+    padding: 0;
 }
 
-.footer-nav-item {
-    width: 20%;
+.footer-nav-item {}
+
+.footer-nav-item .tags {
+    font-size: 18px;
 }
