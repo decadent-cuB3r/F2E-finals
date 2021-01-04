@@ -52,14 +52,18 @@ header {
 }
 
 .nav_list_item {
+    position: relative;
     width: 20%;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.LOGO {
-    display: none;
+.logo {
+    position: absolute;
+    top: -42px;
+    width: 300px;
+    height: 66px;
 }
 
 .tags {
@@ -138,8 +142,6 @@ footer {
     position: relative;
     padding: 0;
 }
-
-.footer-nav-item {}
 
 .footer-nav-item .tags {
     font-size: 18px;
