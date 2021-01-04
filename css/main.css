@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'WebSymbols-Regular';
+    src: url('http://www.fontsaddict.com/fontface/websymbols-regular.otf');
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+.title {
+    font-size: 24px;
+    margin-left: 32px;
+    margin-top: 26px;
+}
+
+.panel {
+    border: 1px solid #A2A2A2;
+    width: 820px;
+    height: 454px;
+    margin: auto;
+    margin-top: 13px;
+}
+
+.panel li {
+    position: relative;
+    margin-top: 22px;
+    font-size: 18px;
+    width: 820px;
+    height: 42px;
+    border-bottom: 1px solid #A2A2A2;
+}
+
+panel li:hover {}
+
+span {
+    margin-left: 12px;
+}
+
+.line {
+    width: auto;
+    border: 0.01px solid #A2A2A2;
+}
+
+.time {
+    color: #929292;
+}
+
+.panel ul {
+    padding-left: 0px;
+}
+
+.arc {
+    width: 123px;
+    height: 34px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 6px 25px;
+    color: #fff;
+}
+
+.blue {
+    background: #428FD6;
+}
+
+.red {
+    background: #E96969;
+}
+
+#move {
+    margin-left: 28px;
+}
+
+.more {
+    position: absolute;
+    right: 4%;
+}
+
+span img {
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+
+/*part2*/
+
+.body_part2 {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 28px;
+    width: 820px;
+}
+
+.block {
+    width: 195px;
+    height: 195px;
+    border: 1px solid #A2A2A2;
+}
+
+.step_icon,
+i {
+    height: 140px;
+    width: 195px;
+    font-size: 100px;
+    color: #A2A2A2;
+}
+
+svg {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.step_content {
+    padding-top: 15px;
+    width: 195px;
+    height: 50px;
+    margin: auto;
+    border-top: 1px solid #A2A2A2;
+}
+
+.step_text {
+    margin-left: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.step_text img {
+    height: 15px;
+    margin-left: 6px;
+}
+
+
+/*body part3*/
+
+.about_panel {
+    margin: auto;
+    margin-top: 29px;
+    width: 820px;
+    height: 777px;
+    border: 1px solid #A2A2A2;
+}
+
+.about_text {}
