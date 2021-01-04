@@ -132,7 +132,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     border: solid 1px white;
-    width: 90%;
+    width: 80%;
     margin-top: 20px;
 }
 
@@ -161,7 +161,7 @@ header {
 .left-col-nav {
     margin: 0;
     padding: 0;
-    width: 90%;
+    width: 80%;
 }
 
 .left-col-nav-items {
