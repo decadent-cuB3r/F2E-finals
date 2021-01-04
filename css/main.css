@@ -30,8 +30,6 @@
     border-bottom: 1px solid #A2A2A2;
 }
 
-panel li:hover {}
-
 span {
     margin-left: 12px;
 }
@@ -139,8 +137,41 @@ svg {
     margin: auto;
     margin-top: 29px;
     width: 820px;
-    height: 777px;
+    height: 580px;
     border: 1px solid #A2A2A2;
 }
 
-.about_text {}
+.about_text {
+    font-size: 24px;
+    margin-left: 15px;
+    margin-top: 14px;
+}
+
+.about_content {
+    width: 820px;
+    height: 715px;
+    border-top: 1px solid #A2A2A2;
+    margin-top: 15px;
+}
+
+.content_text {
+    font-size: 18px;
+    width: 710px;
+    margin-top: 28px;
+    margin-left: 52px;
+    line-height: 150%;
+}
+
+.special {
+    display: flex;
+    line-height: 50px;
+    text-align: center;
+    padding-left: 52px;
+    margin: auto;
+}
+
+.special_text {
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
