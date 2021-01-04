@@ -26,6 +26,15 @@ li {
 }
 
 
+/* RWD */
+
+@media screen and (max-width: 1280px) {
+    .fix_width {
+        width: 100%;
+    }
+}
+
+
 /* header css */
 
 header {
@@ -112,7 +121,69 @@ header {
 }
 
 
-/* aside(right-column items) */
+/* login section */
+
+.left-col {
+    width: 17.64%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 1px white;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.login a,
+.login p {
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.login_img {
+    width: 100%;
+    height: width;
+}
+
+.login_items_name {
+    width: 100%;
+    text-align: center;
+}
+
+.login_items {
+    width: 50%;
+    text-align: center;
+}
+
+.left-col-nav {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+}
+
+.left-col-nav-items {
+    margin: 10px 0;
+    border: white 1px solid;
+    width: 100%;
+    text-align: center;
+}
+
+.left-col-nav-items a {
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/* resource and aside(right-column items) */
 
 .right-column {
     width: 85%;
@@ -125,12 +196,55 @@ header {
     padding-top: 40px;
 }
 
+.right-col {
+    width: 17.64%;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
 
-/* login and main article */
+.resource {
+    position: relative;
+    width: 100%;
+}
 
-.left-col {
-    width: 17.5%;
-    vertical-align: middle;
+.resource-tag.head {
+    border: 1px solid white;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 10%;
+    padding: 2% 0;
+}
+
+.resource-img {
+    text-decoration: none;
+    width: 80%;
+    margin: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #F1BE90;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    transition: .3s;
+}
+
+.resource-img img {
+    width: 80%;
+    height: 80%;
+}
+
+.resource-tag {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.resource-img:hover {
+    transform: scale(1.1);
 }
 
 
