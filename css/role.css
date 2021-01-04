@@ -1,0 +1,89 @@
+* {
+    font-family: 'Roboto';
+}
+
+.header_bread ul {
+    display: flex;
+    width: 216px;
+    padding-left: 3%;
+    margin-top: 3%;
+}
+
+li,
+li a {
+    color: #828282;
+    text-decoration: none;
+}
+
+.arrow {
+    width: 10px;
+    height: 10px;
+}
+
+.role_panel {
+    font-size: 24px;
+    padding-left: 3%;
+    font-weight: bold;
+}
+
+.role_nav {
+    width: 820px;
+    height: 63px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0%;
+    margin: auto;
+    margin-top: 1%;
+    line-height: 63px;
+    text-align: center;
+    background-color: #DBA574;
+}
+
+.role_nav li a {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.role_frame {
+    width: 818px;
+    height: 2493px;
+    border: 1px solid #A2A2A2;
+    margin: auto;
+}
+
+.role_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.role_line {
+    border: 3px solid #DBA574;
+    width: 764px;
+    margin: 10px 25px;
+    margin-bottom: 0;
+}
+
+.role_p caption {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin: 1%;
+}
+
+table {
+    margin: auto;
+    border: 1px solid #A2A2A2;
+    border-collapse: collapse;
+    width: 760px;
+}
+
+th,
+td {
+    padding: 0.2em 0.4em;
+    border: 1px solid #A2A2A2;
+    border-collapse: collapse;
+    line-height: 180%;
+    font-size: 14px;
+}
