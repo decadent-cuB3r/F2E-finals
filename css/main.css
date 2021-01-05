@@ -15,12 +15,6 @@
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1279px) {
-    #main_pgcontent {
-        height: 1800px;
-    }
-}
-
 .title {
     font-size: 24px;
     margin-left: 32px;
@@ -35,13 +29,25 @@
     margin-top: 13px;
 }
 
+.panel ul {
+    margin-top: 0%;
+}
+
+.panel a {
+    text-decoration: none;
+}
+
 .panel li {
     position: relative;
-    margin-top: 22px;
+    padding-top: 22px;
     font-size: 18px;
     width: 100%;
     height: 42px;
     border-bottom: 1px solid #A2A2A2;
+}
+
+.panel li:hover {
+    background-color: #d3d3d3;
 }
 
 span {
@@ -57,12 +63,16 @@ span {
     color: #929292;
 }
 
+.Imformation_content {
+    color: black;
+}
+
 .panel ul {
     padding-left: 0px;
 }
 
 .arc {
-    width: 123px;
+    width: 155px;
     height: 34px;
     border-radius: 20px;
     text-align: center;
@@ -82,14 +92,52 @@ span {
     margin-left: 28px;
 }
 
+.panel li:hover .more {
+    transform: translateX(20px);
+}
+
 .more {
     position: absolute;
     right: 4%;
+    transition: 0.3s;
 }
 
 span img {
     padding-top: 3px;
     padding-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .panel {
+        height: 615px;
+        overflow: scroll;
+    }
+    .panel li {
+        padding-left: 3%;
+        padding-top: 4%;
+        height: 65px;
+        position: relative;
+    }
+    .Imformation_content {
+        position: absolute;
+        bottom: 6%;
+        left: 3%;
+    }
+    .more {
+        padding-right: 4%;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    #main_pgcontent {
+        height: 1800px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #main_pgcontent {
+        height: 1880px;
+    }
 }
 
 
@@ -108,20 +156,56 @@ span img {
     width: 22%;
     height: 100%;
     border: 1px solid #A2A2A2;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+.step_text img {
+    transition: 1s;
+}
+
+.block:hover {
+    background-color: #DBA574;
+    border: #fff;
+}
+
+.block:hover .step_text img {
+    transform: translateX(50px) scale(1.3);
+}
+
+.block:hover .step_text {
+    color: white;
+}
+
+.block:hover .step_icon {
+    transform: scale(1.3) rotate(25deg) translateY(-30px);
+    color: #F1BE90;
+}
+
+.block:hover .step_content {
+    border-top: 1px solid#fff;
+}
+
+.step_icon {
+    width: 100%;
 }
 
 .step_icon,
 i {
     height: 140px;
-    width: 195px;
+    width: 100%;
     font-size: 100px;
-    color: #A2A2A2;
-    margin: 0;
+    color: #F1BE90;
+    margin: 0 auto;
     padding: 0;
+    /* for hover animation */
+    transition: .3s;
 }
 
 svg {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     margin-top: 20px;
 }
 
@@ -131,17 +215,29 @@ svg {
     height: 50px;
     margin: auto;
     border-top: 1px solid #A2A2A2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
+
+/*panel1*/
+
 @media screen and (max-width: 1279px) {
-    .block {
-        width: 48%;
-        margin: 1.5% 0;
+    span {
+        margin-left: 10px;
+    }
+    .arc {
+        padding: 6px 15px;
     }
 }
 
+
+/*body part2*/
+
 .step_text {
-    margin-left: 18px;
+    width: 137px;
+    margin: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
@@ -150,8 +246,16 @@ svg {
 }
 
 .step_text img {
+    width: 17px;
     height: 15px;
-    margin-left: 6px;
+    /* margin-left: 1%; */
+}
+
+@media screen and (max-width: 1279px) {
+    .block {
+        width: 48%;
+        margin: 1.5% 0;
+    }
 }
 
 
@@ -163,12 +267,6 @@ svg {
     width: 96%;
     height: 580px;
     border: 1px solid #A2A2A2;
-}
-
-@media screen and (max-width: 1279px) {
-    .about_panel {
-        height: 630px;
-    }
 }
 
 .about_text {
@@ -187,16 +285,15 @@ svg {
 .content_text {
     font-size: 18px;
     width: 85%;
+    margin: auto;
     margin-top: 28px;
-    margin-left: 52px;
     line-height: 150%;
 }
 
 .special {
     display: flex;
-    line-height: 50px;
-    text-align: center;
-    padding-left: 52px;
+    line-height: 40px;
+    width: 85%;
     margin: auto;
 }
 
@@ -204,4 +301,19 @@ svg {
     margin-left: 0;
     font-size: 18px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1279px) {
+    .about_panel {
+        height: 630px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about_panel {
+        height: 640px;
+    }
+    .special {
+        line-height: 30px;
+    }
 }
