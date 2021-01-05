@@ -1,0 +1,101 @@
+/* Q&A section */
+
+.QA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+#QA_head {
+    font-family: 'Itim', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.QA_head_line {
+    width: 40%;
+    height: 6px;
+    background: #FFAD7E;
+}
+
+.QA_head_text {
+    /* 設定外框 */
+    /* background: #FFAD7E; */
+    border-radius: 30px;
+    width: 20%;
+    /* height: 80px; */
+    /* 設定文字 */
+    color: #FFAD7E;
+    line-height: 80px;
+    text-align: center;
+    margin: 0;
+}
+
+.Q_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    min-height: 80px;
+    border-radius: 30px;
+    background-color: #FFAD7E;
+    margin: 0 auto 20px auto;
+}
+
+.Q {
+    font-family: 'Itim';
+    color: #FFEFC7;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.Q_btn {
+    margin-right: 30px;
+    /* 三角形產生器*/
+    width: 0px;
+    height: 0px;
+}
+
+.unclicked {
+    border-left: 20px solid #FFAD7E;
+    border-right: 20px solid #FFAD7E;
+    border-top: 30px solid #FFEFC7;
+}
+
+.clicked {
+    border-left: 20px solid #FFAD7E;
+    border-right: 20px solid #FFAD7E;
+    border-bottom: 30px solid #FFEFC7;
+}
+
+.Q_btn:hover {
+    /* 三角形產生器*/
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid #FFAD7E;
+    border-right: 20px solid #FFAD7E;
+    border-top: 30px solid #FFC773;
+}
+
+.A_section {
+    display: none;
+    align-items: center;
+    width: 80%;
+    /* min-height: 80px; */
+    border-radius: 30px;
+    border: 3px solid #FF8C4B;
+    background-color: #ffffff;
+    margin: 0 auto 20px auto;
+}
+
+.A {
+    font-family: 'Itim';
+    color: #FF8C4B;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
