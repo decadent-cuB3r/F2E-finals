@@ -1,0 +1,13 @@
+.choose_bar {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.choose {
+    width: 80px;
+    height: 43px;
+    font-size: 18px;
+    color: #DBA574;
+    font-weight: bold;
+}
