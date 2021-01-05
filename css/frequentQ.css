@@ -1,0 +1,117 @@
+* {
+    font-family: 'Roboto';
+}
+
+#frequentQ {
+    height: 1000px;
+}
+
+
+/* Q&A section */
+
+.QA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+#QA_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.QA_head_line {
+    width: 40%;
+    height: 3px;
+    background: #FFAD7E;
+}
+
+.QA_head_text {
+    /* 設定外框 */
+    /* background: #FFAD7E; */
+    border-radius: 30px;
+    width: 20%;
+    /* height: 80px; */
+    /* 設定文字 */
+    font-size: 18px;
+    color: #FFAD7E;
+    line-height: 80px;
+    text-align: center;
+    margin: 0;
+}
+
+.Q_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    min-height: 50px;
+    border-radius: 30px;
+    background-color: #FFAD7E;
+    margin: 0 auto 20px auto;
+}
+
+.Q {
+    color: #FFEFC7;
+    font-size: 18px;
+    margin-left: 30px;
+    font-weight: 100;
+}
+
+.Q_btn {
+    margin-right: 30px;
+    /* 三角形產生器*/
+    width: 0px;
+    height: 0px;
+}
+
+.unclicked {
+    border-left: 10px solid #FFAD7E;
+    border-right: 10px solid #FFAD7E;
+    border-top: 12px solid #FFEFC7;
+}
+
+.clicked {
+    border-left: 10px solid #FFAD7E;
+    border-right: 10px solid #FFAD7E;
+    border-bottom: 12px solid #FFEFC7;
+}
+
+.Q_btn.unclicked:hover {
+    /* 三角形產生器*/
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid #FFAD7E;
+    border-right: 10px solid #FFAD7E;
+    border-top: 12px solid #FFC773;
+}
+
+.Q_btn.clicked:hover {
+    border-left: 10px solid #FFAD7E;
+    border-right: 10px solid #FFAD7E;
+    border-bottom: 12px solid #FFC773;
+}
+
+.A_section {
+    display: none;
+    align-items: center;
+    width: 90%;
+    /* min-height: 80px; */
+    border-radius: 30px;
+    border: 3px solid #FF8C4B;
+    background-color: #ffffff;
+    margin: 0 auto 20px auto;
+}
+
+.A {
+    font-size: 18px;
+    font-weight: 100;
+    color: #FF8C4B;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}

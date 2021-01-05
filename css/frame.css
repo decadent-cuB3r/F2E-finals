@@ -16,6 +16,9 @@ li {
     text-decoration: none;
 }
 
+
+/* RWD basic settings */
+
 .container {
     position: relative;
     display: flex;
@@ -28,9 +31,6 @@ li {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/* RWD */
 
 @media screen and (max-width: 1280px) {
     .fix_width {
@@ -90,8 +90,9 @@ header {
 
 .pg_content {
     position: relative;
-    height: 2000px;
+    min-height: 1000px;
     width: 96%;
+    margin: 40px 0;
 }
 
 
@@ -110,6 +111,12 @@ header {
     padding-bottom: 40px;
 }
 
+@media screen and (max-width: 1279px) {
+    .left-column {
+        width: 98%;
+    }
+}
+
 
 /* main(center content items) */
 
@@ -121,7 +128,14 @@ header {
     height: 96%;
     width: 70%;
     left: 15%;
-    top: 40px;
+    top: 32px;
+}
+
+@media screen and (max-width: 1279px) {
+    .main {
+        width: 83%;
+        top: 38px;
+    }
 }
 
 
@@ -133,6 +147,12 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 1279px) {
+    .left-col {
+        width: 15%;
+    }
 }
 
 .login {
@@ -153,7 +173,7 @@ header {
 
 .login_img {
     width: 100%;
-    height: width;
+    height: 100%;
 }
 
 .login_items_name {
@@ -210,6 +230,12 @@ header {
 .resource {
     position: relative;
     width: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+    .resource {
+        display: none;
+    }
 }
 
 .resource-tag.head {
