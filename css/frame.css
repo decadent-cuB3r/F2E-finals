@@ -334,10 +334,43 @@ footer {
     padding: 0;
 }
 
-.footer-nav-item .tags {
+.footer-nav-item {
+    width: 10%;
+}
+
+.tags {
+    font-size: 18px;
+    height: 25px;
+}
+
+#Copyright {
+    width: 50%;
+    float: right;
+    margin-left: 2%;
+    color: #fff;
     font-size: 18px;
 }
 
+.nav_list {
+    margin-left: 2%;
+}
+
+.footer_line {
+    width: 35px;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+
+#form {
+    background-color: #DBA574;
+    color: #fff;
+    margin-right: 2%;
+    border: 1px solid #FFFFFF;
+}
+
+
+}
 @media screen and (max-width: 767px) {
     .footer-nav-item .tags {
         font-size: 14px;
