@@ -61,6 +61,7 @@ header {
 
 @media screen and (max-width: 767px) {
     .nav_bar {
+        position: relative;
         justify-content: flex-end;
     }
 }
@@ -94,6 +95,10 @@ header {
     text-decoration: none;
 }
 
+.nav_login_col {
+    display: none;
+}
+
 @media screen and (max-width: 1279px) {
     .logo {
         width: 100px;
@@ -105,7 +110,40 @@ header {
 
 @media screen and (max-width: 767px) {
     .nav_list {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        top: 80px;
+        background-color: #DBA574;
+        border-radius: 20px;
+        z-index: 100;
+        transition: .3s;
+        width: 0%;
+    }
+    .nav_list.open {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        top: 80px;
+        background-color: #DBA574;
+        border-radius: 20px;
+        z-index: 100;
+        width: 100%;
+        transform: translateX(0px);
+    }
+    .logo {
         display: none;
+    }
+    .nav_login_col {
+        position: relative;
+        display: block;
+        width: 100%;
+        left: auto;
+        right: auto;
+    }
+    .nav_list_item {
+        width: 100%;
+        z-index: 99;
     }
 }
 
@@ -404,8 +442,46 @@ footer {
     padding: 0;
 }
 
+.footer_nav_bar {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    height: 60%;
+    width: 96%;
+    background-color: #DBA574;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        height: 200px;
+    }
+    .footer_nav_bar {
+        height: 80%;
+    }
+}
+
+.footer_nav_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.footer_nav_list_item {
+    position: relative;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .footer-nav-item {
-    width: 10%;
+    width: 100%;
 }
 
 .tags {
@@ -414,15 +490,11 @@ footer {
 }
 
 #Copyright {
-    width: 50%;
+    width: 100%;
     float: right;
     margin-left: 2%;
     color: #fff;
     font-size: 18px;
-}
-
-.nav_list {
-    margin-left: 2%;
 }
 
 .footer_line {
@@ -430,6 +502,12 @@ footer {
     height: 0px;
     border: 1px solid #FFFFFF;
     transform: rotate(90deg);
+}
+
+@media screen and (max-width: 767px) {
+    .footer_line {
+        display: none;
+    }
 }
 
 #form {
