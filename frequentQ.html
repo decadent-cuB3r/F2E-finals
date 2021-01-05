@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/frame.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/frequentQ.css">
+    <link rel="stylesheet" href="./css/role.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="./js/frequentQ.js"></script>
@@ -21,9 +22,11 @@
         <div class="nav_bar">
             <ul class="nav_list">
                 <l1 class="nav_list_item"><a class="tags" href="">規則介紹</a></l1>
-                <l1 class="nav_list_item"><a class="tags" href="">役種一欄</a></l1>
+                <l1 class="nav_list_item"><a class="tags" href="./role.html">役種一欄</a></l1>
                 <li class="nav_list_item">
-                    <lottie-player class="logo" src="https://assets9.lottiefiles.com/packages/lf20_ww92skms.json" background="transparent" speed="1" style="width: 200px; height: 80px;" autoplay></lottie-player>
+                    <a href="./index.html">
+                        <lottie-player class="logo" src="https://assets9.lottiefiles.com/packages/lf20_ww92skms.json" background="transparent" speed="1" style="width: 200px; height: 80px;" autoplay></lottie-player>
+                    </a>
                 </li>
                 <l1 class="nav_list_item"><a class="tags" href="">點數計算</a></l1>
                 <l1 class="nav_list_item"><a class="tags" href="">討論板</a></l1>
@@ -31,7 +34,7 @@
         </div>
     </header>
     <div class="fix_width container">
-        <div class="pg_content">
+        <div class="pg_content" id="frequentQ">
             <aside class="left-column">
                 <aside class="left-col">
                     <div class="login">
@@ -44,12 +47,26 @@
                         <li class="left-col-nav-items"><a href="">日麻教學</a></li>
                         <li class="left-col-nav-items"><a href="">線上練習</a></li>
                         <li class="left-col-nav-items"><a href="">討論板</a></li>
-                        <li class="left-col-nav-items"><a href="">常見問題</a></li>
+                        <li class="left-col-nav-items"><a href="./frequentQ.html">常見問題</a></li>
                     </ul>
                 </aside>
             </aside>
             <main class="main">
                 <!-- content goes here -->
+                <div class="header_bread">
+                    <ul>
+                        <li>
+                            <a href="./index.html">首頁</a>
+                            <img class="arrow" src="./img/arrow5.gif" alt="">
+                        </li>
+                        <li>
+                            <a href="">日麻教學</a>
+                            <img class="arrow" src="./img/arrow5.gif" alt="">
+                        </li>
+                        <li>役種一覽</li>
+                    </ul>
+                </div>
+
                 <div class="QA">
                     <div id="QA_head">
                         <div class="QA_head_line"></div>
@@ -58,14 +75,14 @@
                     </div>
                     <div class="Q_section">
                         <h1 class="Q">Q1. 爲什麼不能和牌？</h1>
-                        <div id="Q1" class="Q_btn" data-Aid="1"></div>
+                        <div id="Q1" class="Q_btn unclicked" data-Aid="1"></div>
                     </div>
                     <div id="A1" class="A_section">
                         <h1 class="A">A. 不滿足和牌要求 或 沒有役 或 振聽</h1>
                     </div>
                     <div class="Q_section">
                         <h1 class="Q">Q2. 何謂振聽？</h1>
-                        <div id="Q2" class="Q_btn" data-Aid="2"></div>
+                        <div id="Q2" class="Q_btn unclicked" data-Aid="2"></div>
                     </div>
                     <div id="A2" class="A_section">
                         <h1 class="A">A. 捨牌振聽：聽的牌被自己打過（永久） 立直振聽：立直後聽的牌被打出，但不和牌則振聽（永久） 同巡振聽：聽的牌被打出，但不和牌，則振聽 若且唯若切出任何一枚牌時，同巡振聽狀態解除
@@ -73,14 +90,14 @@
                     </div>
                     <div class="Q_section">
                         <h1 class="Q">Q3. 一巡的定義？</h1>
-                        <div id="Q3" class="Q_btn" data-Aid="3"></div>
+                        <div id="Q3" class="Q_btn unclicked" data-Aid="3"></div>
                     </div>
                     <div id="A3" class="A_section">
                         <h1 class="A">A. 從你打出一張牌開始計算，直到你打出下一張牌之前，為一巡</h1>
                     </div>
                     <div class="Q_section">
                         <h1 class="Q">Q4. 什麼時候會連莊？</h1>
-                        <div id="Q4" class="Q_btn" data-Aid="4"></div>
+                        <div id="Q4" class="Q_btn unclicked" data-Aid="4"></div>
                     </div>
                     <div id="A4" class="A_section">
                         <h1 class="A">A. 1.流局時親家聽牌(有流局滿貫時，也是看親家是否聽牌) 2.親家和牌

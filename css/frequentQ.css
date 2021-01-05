@@ -1,3 +1,12 @@
+* {
+    font-family: 'Roboto';
+}
+
+#frequentQ {
+    height: 1000px;
+}
+
+
 /* Q&A section */
 
 .QA {
@@ -8,17 +17,16 @@
 }
 
 #QA_head {
-    font-family: 'Itim', cursive;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    margin: 20px auto;
+    width: 90%;
+    margin: auto;
 }
 
 .QA_head_line {
     width: 40%;
-    height: 6px;
+    height: 3px;
     background: #FFAD7E;
 }
 
@@ -29,6 +37,7 @@
     width: 20%;
     /* height: 80px; */
     /* 設定文字 */
+    font-size: 18px;
     color: #FFAD7E;
     line-height: 80px;
     text-align: center;
@@ -39,18 +48,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    min-height: 80px;
+    width: 90%;
+    min-height: 50px;
     border-radius: 30px;
     background-color: #FFAD7E;
     margin: 0 auto 20px auto;
 }
 
 .Q {
-    font-family: 'Itim';
     color: #FFEFC7;
-    font-size: 30px;
+    font-size: 18px;
     margin-left: 30px;
+    font-weight: 100;
 }
 
 .Q_btn {
@@ -61,30 +70,36 @@
 }
 
 .unclicked {
-    border-left: 20px solid #FFAD7E;
-    border-right: 20px solid #FFAD7E;
-    border-top: 30px solid #FFEFC7;
+    border-left: 10px solid #FFAD7E;
+    border-right: 10px solid #FFAD7E;
+    border-top: 12px solid #FFEFC7;
 }
 
 .clicked {
-    border-left: 20px solid #FFAD7E;
-    border-right: 20px solid #FFAD7E;
-    border-bottom: 30px solid #FFEFC7;
+    border-left: 10px solid #FFAD7E;
+    border-right: 10px solid #FFAD7E;
+    border-bottom: 12px solid #FFEFC7;
 }
 
-.Q_btn:hover {
+.Q_btn.unclicked:hover {
     /* 三角形產生器*/
     width: 0px;
     height: 0px;
-    border-left: 20px solid #FFAD7E;
-    border-right: 20px solid #FFAD7E;
-    border-top: 30px solid #FFC773;
+    border-left: 10px solid #FFAD7E;
+    border-right: 10px solid #FFAD7E;
+    border-top: 12px solid #FFC773;
+}
+
+.Q_btn.clicked:hover {
+    border-left: 10px solid #FFAD7E;
+    border-right: 10px solid #FFAD7E;
+    border-bottom: 12px solid #FFC773;
 }
 
 .A_section {
     display: none;
     align-items: center;
-    width: 80%;
+    width: 90%;
     /* min-height: 80px; */
     border-radius: 30px;
     border: 3px solid #FF8C4B;
@@ -93,7 +108,8 @@
 }
 
 .A {
-    font-family: 'Itim';
+    font-size: 18px;
+    font-weight: 100;
     color: #FF8C4B;
     width: 90%;
     margin-left: auto;

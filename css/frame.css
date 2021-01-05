@@ -90,14 +90,9 @@ header {
 
 .pg_content {
     position: relative;
-    height: 1450px;
+    min-height: 1000px;
     width: 96%;
-}
-
-@media screen and (max-width: 1279px) {
-    .pg_content {
-        height: 1750px;
-    }
+    margin: 40px 0;
 }
 
 

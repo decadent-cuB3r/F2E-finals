@@ -23,9 +23,14 @@ $(document).ready(function() {
 
 
 
-    $('.Q_btn').addClass('unclicked').click(function() {
+    $('.Q_btn').click(function() {
         var btn_id = $(this).attr('data-Aid');
         $('#A' + btn_id).slideToggle(500);
     });
-
+    $('.Q_btn').click(function() {
+        $(this).toggleClass('clicked')
+    });
+    $('.Q_btn').click(function() {
+        $(this).toggleClass('unclicked')
+    });
 });

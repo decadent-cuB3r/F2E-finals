@@ -7,6 +7,16 @@
     font-family: 'Roboto';
 }
 
+#main {
+    height: 1450px;
+}
+
+@media screen and (max-width: 1279px) {
+    #main {
+        height: 1800px;
+    }
+}
+
 .title {
     font-size: 24px;
     margin-left: 32px;
