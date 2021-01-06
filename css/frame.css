@@ -95,9 +95,15 @@ header {
 }
 
 .tags {
+    padding: 10px 10px;
     color: white;
     font-size: 24px;
     text-decoration: none;
+}
+
+.tags:hover {
+    background-color: #F1BE90;
+    border-radius: 15px;
 }
 
 .nav_login_col {
@@ -420,7 +426,12 @@ header {
     text-align: center;
 }
 
+.left-col-nav-items:hover {
+    background-color: #F1BE90;
+}
+
 .left-col-nav-items a {
+    padding: 6.5px 41px;
     text-decoration: none;
     color: white;
     line-height: 30px;
