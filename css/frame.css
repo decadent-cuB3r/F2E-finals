@@ -485,9 +485,10 @@ footer {
     text-align: center;
 }
 
-.tags {
+.footer_tags {
     font-size: 18px;
     height: 25px;
+    color: #fff;
 }
 
 #Copyright {
@@ -518,7 +519,7 @@ footer {
 }
 
 @media screen and (max-width: 1279px) {
-    .tags,
+    .footer_tags,
     #Copyright,
     #form {
         font-size: 14px;
@@ -527,7 +528,7 @@ footer {
 
 @media screen and (max-width: 767px) {
     #Copyright,
-    .tags {
+    .footer_tags {
         font-size: 18px;
     }
     .footer_nav_bar {
