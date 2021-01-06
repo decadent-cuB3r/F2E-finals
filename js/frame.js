@@ -1,14 +1,16 @@
 $(document).ready(function() {
+    // hamburger menu btn animation
     $('.menu-btn').click(function() {
         $(this).toggleClass('open')
-    })
+    });
+    //show hamburger-nav
     $('.menu-btn').click(function() {
-        $('.nav_list').toggleClass('open')
-    })
-    $('.menu-btn').click(function() {
-        $('.nav_login_col').toggleClass('open')
-    })
-    $('.menu-btn').click(function() {
-        $('.tags').toggleClass('open')
-    })
+        $('.hamburger-nav').slideToggle(500)
+    });
+    $('.hamburger-nav-items').click(function() {
+        $(this).children('.hamburger-subnav').slideToggle(500)
+    });
+    // $('.hamburger-login').click(function() {
+    //     $('hamburger-login-btn').toggleClass('open')
+    // });
 });
