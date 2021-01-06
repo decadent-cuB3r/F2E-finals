@@ -89,6 +89,10 @@ header {
     height: 66px;
 }
 
+#logo {
+    display: none;
+}
+
 .tags {
     color: white;
     font-size: 24px;
@@ -133,6 +137,12 @@ header {
     }
     .logo {
         display: none;
+    }
+    #logo {
+        display: block;
+        position: absolute;
+        left: 0%;
+        top: -17%;
     }
     .nav_login_col.open {
         position: relative;
@@ -546,10 +556,6 @@ footer {
     .form_position {
         width: 100%;
         text-align: center;
-    }
-    .footer_nav_bar {
-        position: absolute;
-        top: 6%;
     }
     #display {
         display: none;

@@ -125,6 +125,15 @@
     top: 2.9%;
 }
 
+@media screen and (max-width:1279px) {
+    #frequentQ_footer {
+        margin-top: 1.5%;
+    }
+    #frequentQ_left {
+        top: 3.6%;
+    }
+}
+
 @media screen and (max-width:767px) {
     #frequentQ_left {
         height: 99%;
@@ -139,11 +148,5 @@
     }
     .footer_nav_bar {
         top: 0%;
-    }
-}
-
-@media screen and (max-width:1279px) {
-    #frequentQ_left {
-        top: 3.55%;
     }
 }
