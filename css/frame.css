@@ -144,12 +144,24 @@ header {
         left: 0%;
         top: -17%;
     }
+    .nav_login_col {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .nav_login_col.open {
         position: relative;
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
-        left: auto;
-        right: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav_login_itemms_name {
+        width: 100%;
+    }
+    .nav_login_itemms {
+        width: 50%;
     }
     .nav_list_item {
         width: 100%;
