@@ -6,6 +6,12 @@
     height: 2530px;
 }
 
+#role_left,
+#role_right,
+#role_main {
+    height: 97%;
+}
+
 #role_left {
     top: 1.15%;
 }
@@ -116,4 +122,34 @@ td {
 td img {
     height: 31px;
     margin-bottom: -1%;
+}
+
+@media screen and (max-width: 1279px) {
+    #role {
+        height: 2800px;
+    }
+    #role_left,
+    #role_right,
+    #role_main {
+        height: 97.5%;
+    }
+    #role_left {
+        top: 1.28%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #role {
+        height: 3500px;
+    }
+    #role_main {
+        position: absolute;
+        top: 0.5%;
+        height: 98.5%;
+    }
+    #role_left {
+        height: 99.5%;
+        position: absolute;
+        top: 0%;
+    }
 }
