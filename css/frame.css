@@ -134,7 +134,7 @@ header {
     .logo {
         display: none;
     }
-    .nav_login_col {
+    .nav_login_col.open {
         position: relative;
         display: block;
         width: 100%;
@@ -144,6 +144,12 @@ header {
     .nav_list_item {
         width: 100%;
         z-index: 99;
+    }
+    .tags {
+        display: none;
+    }
+    .tags.open {
+        display: block;
     }
 }
 
