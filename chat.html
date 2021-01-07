@@ -12,6 +12,31 @@
     <link rel="stylesheet" href="./css/role.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap">
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-storage.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap CSS/JS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS/CSS -->
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -98,6 +123,21 @@
                         </a>
                     </li>
                 </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
+                            <div class="card shadow mt-5">
+                                <div id="card-header" class="card-header text-center"></div>
+                                <input type="text" class="form-control-plaintext name-field" id="name-field" placeholder="Enter a username ...">
+                                <div class="card-body">
+                                    <ul id='message-list' class="message-list"></ul>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <input type="text" class="form-control-plaintext message-field" id="message-field" placeholder="Type a message ...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </main>
             <aside class="right-column">
                 <aside class="right-col">
@@ -122,28 +162,28 @@
                     </div>
                 </aside>
             </aside>
+            </div>
         </div>
-    </div>
-    <footer class="fix_width" id="main_footer">
-        <div class="footer_nav_bar">
-            <ul class="footer_nav_list">
-                <li class="footer_nav_list_item footer-nav-item"><a class="footer_tags" href="">關於我們</a></li>
-                <li class="footer_line"></li>
-                <li class="footer_nav_list_item footer-nav-item"><a class="footer_tags" href="">隱私政策</a></li>
-                <li class="footer_line"></li>
-                <li class="footer_nav_list_item footer-nav-item"><a class="footer_tags" href="">聯絡我們</a></li>
-                <li class="footer_line" id="display"></li>
-            </ul>
-            <div id="Copyright">Copyright @ Nihonmajiun.All right reserved</div>
-            <div class="form_position">
-                <select name="language" id="form">
+        <footer class="fix_width" id="main_footer">
+            <div class="footer_nav_bar">
+                <ul class="footer_nav_list">
+                    <li class="footer_nav_list_item footer-nav-item"><a class="footer_tags" href="">關於我們</a></li>
+                    <li class="footer_line"></li>
+                    <li class="footer_nav_list_item footer-nav-item"><a class="footer_tags" href="">隱私政策</a></li>
+                    <li class="footer_line"></li>
+                    <li class="footer_nav_list_item footer-nav-item"><a class="footer_tags" href="">聯絡我們</a></li>
+                    <li class="footer_line" id="display"></li>
+                </ul>
+                <div id="Copyright">Copyright @ Nihonmajiun.All right reserved</div>
+                <div class="form_position">
+                    <select name="language" id="form">
                 <option value="Chineese">繁體中文</option>
                 <option value="English">English(英文)</option>
                 <option value="Japaneese">日本語(日文)</option>
             </select>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
